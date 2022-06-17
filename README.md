@@ -2,15 +2,15 @@
 use crontab or airflow
 
 > vi crawler.sh
-'''
+```
 /usr/bin/python3 /Users/Desktop/statementdog/listed.py
 /usr/bin/python3 /Users/Desktop/statementdog/industry_top3.py
-'''
+```
 
 > crontab -e
-'''
+```
 0 18 * * * /usr/bin/bash crawler.sh
-'''
+```
 
 ##IF in AWS
 suggest use lambda
