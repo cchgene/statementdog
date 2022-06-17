@@ -1,4 +1,4 @@
-##If in local mode
+## If in local mode
 use crontab or airflow
 
 > vi crawler.sh
@@ -12,7 +12,7 @@ use crontab or airflow
 0 18 * * * /usr/bin/bash crawler.sh
 ```
 
-##IF in AWS
+## IF in AWS
 suggest use lambda
 
 
