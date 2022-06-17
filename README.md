@@ -1,13 +1,16 @@
 ##If in local mode
 use crontab or airflow
 
-create crawler.sh
+> vi crawler.sh
+'''
 /usr/bin/python3 /Users/Desktop/statementdog/listed.py
 /usr/bin/python3 /Users/Desktop/statementdog/industry_top3.py
+'''
 
 > crontab -e
+'''
 0 18 * * * /usr/bin/bash crawler.sh
-
+'''
 
 ##IF in AWS
 suggest use lambda
@@ -24,4 +27,4 @@ suggest use lambda
 
 5.如果資料來源只有一個網站，又要大量爬取，下次可能會改成邊寫檔案，這樣一來若是哪裡有缺也不用整個重跑
 
-6.最後有發現有個地方寫錯，修正後會再上傳
+6.最後有發現有個地方寫錯導致第二題沒有成功跑出來，修正後會再上傳
