@@ -1,4 +1,4 @@
-## If in local mode
+## If in local
 use crontab or airflow
 
 > crontab -e
@@ -6,7 +6,7 @@ use crontab or airflow
 0 18 * * * /usr/bin/bash /Users/Desktop/statementdog/scripts/crawler.sh
 ```
 
-## IF in AWS
+## IF in cloud
 suggest use lambda
 
 
